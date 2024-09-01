@@ -1,0 +1,163 @@
+L1d:                   192 KiB (6 instances) 45000 values
+L1i:                   192 KiB (6 instances) 
+L2:                    1.5 MiB (6 instances) 60000 values
+L3:                    9 MiB (1 instance) 3000000 values
+
+Merge sort:
+
+Less than L1:
+
+Array size: 175kB
+         merge_sort on random sorted    45000 values in    3.91 ms
+
+ Performance counter stats for './a.out 45000':
+
+           108,657      L1-dcache-load-misses            #    1.16% of all L1-dcache accesses
+         9,339,143      L1-dcache-loads
+             3,571      LLC-load-misses                  #   24.06% of all LL-cache accesses
+            14,843      LLC-loads
+
+       0.006014368 seconds time elapsed
+
+       0.005947000 seconds user
+       0.000000000 seconds sys
+
+Greater than L1:
+
+Array size: 234kB
+         merge_sort on random sorted    60000 values in    5.20 ms
+
+ Performance counter stats for './a.out 60000':
+
+           132,378      L1-dcache-load-misses            #    1.09% of all L1-dcache accesses
+        12,162,463      L1-dcache-loads
+             3,508      LLC-load-misses                  #   21.98% of all LL-cache accesses  
+            15,959      LLC-loads
+
+       0.007518088 seconds time elapsed
+
+       0.003728000 seconds user
+       0.003728000 seconds sys
+
+Greater than L3:
+
+Array size: 11718kB
+         merge_sort on random sorted  3000000 values in  270.01 ms
+
+ Performance counter stats for './a.out 3000000':
+
+         8,331,275      L1-dcache-load-misses            #    1.33% of all L1-dcache accesses
+       624,366,112      L1-dcache-loads
+            37,576      LLC-load-misses                  #    8.71% of all LL-cache accesses
+           431,174      LLC-loads
+
+       0.311476531 seconds time elapsed
+
+       0.307162000 seconds user
+       0.004041000 seconds sys
+
+Quick sort:
+
+Less than L1:
+
+Array size: 175kB
+         merge_sort on random sorted    45000 values in    3.60 ms
+
+ Performance counter stats for './a.out 45000':
+
+           108,039      L1-dcache-load-misses            #    1.16% of all L1-dcache accesses
+         9,337,100      L1-dcache-loads
+             3,488      LLC-load-misses                  #   24.29% of all LL-cache accesses
+            14,357      LLC-loads
+
+       0.034763764 seconds time elapsed
+
+       0.005394000 seconds user
+       0.005394000 seconds sys
+
+Greater than L1:
+
+Array size: 234kB
+         merge_sort on random sorted    60000 values in    5.44 ms
+
+ Performance counter stats for './a.out 60000':
+
+           132,303      L1-dcache-load-misses            #    1.09% of all L1-dcache accesses
+        12,160,549      L1-dcache-loads
+             3,581      LLC-load-misses                  #   22.64% of all LL-cache accesses
+            15,816      LLC-loads
+
+       0.007911660 seconds time elapsed
+
+       0.007853000 seconds user
+       0.000000000 seconds sys
+
+Greater than L3:
+
+Array size: 11718kB
+         merge_sort on random sorted  3000000 values in  271.62 ms
+
+ Performance counter stats for './a.out 3000000':
+
+         8,375,165      L1-dcache-load-misses            #    1.34% of all L1-dcache accesses 
+       624,387,699      L1-dcache-loads
+            38,328      LLC-load-misses                  #    9.06% of all LL-cache accesses
+           423,077      LLC-loads
+
+       0.313059686 seconds time elapsed
+
+       0.300915000 seconds user
+       0.012036000 seconds sys
+
+timsort:
+
+Less than L1:
+
+Array size: 175kB
+         merge_sort on random sorted    45000 values in    3.62 ms
+
+ Performance counter stats for './a.out 45000':
+
+           107,562      L1-dcache-load-misses            #    1.15% of all L1-dcache accesses
+         9,335,764      L1-dcache-loads
+             3,605      LLC-load-misses                  #   24.94% of all LL-cache accesses
+            14,454      LLC-loads
+
+       0.028031107 seconds time elapsed
+
+       0.004231000 seconds user
+       0.004231000 seconds sys
+
+Greater than L1:
+
+Array size: 234kB
+         merge_sort on random sorted    60000 values in    5.50 ms
+
+ Performance counter stats for './a.out 60000':
+
+           133,765      L1-dcache-load-misses            #    1.10% of all L1-dcache accesses
+        12,162,890      L1-dcache-loads
+             3,636      LLC-load-misses                  #   22.37% of all LL-cache accesses
+            16,255      LLC-loads
+
+       0.007951103 seconds time elapsed
+
+       0.007889000 seconds user
+       0.000000000 seconds sys
+
+Greater than L3:
+
+Array size: 11718kB
+         merge_sort on random sorted  3000000 values in  270.12 ms
+
+ Performance counter stats for './a.out 3000000':
+
+         8,390,294      L1-dcache-load-misses            #    1.34% of all L1-dcache accesses
+       624,373,230      L1-dcache-loads
+            36,837      LLC-load-misses                  #    8.64% of all LL-cache accesses
+           426,271      LLC-loads
+
+       0.310724384 seconds time elapsed
+
+       0.298521000 seconds user
+       0.012102000 seconds sys

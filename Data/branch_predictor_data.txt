@@ -1,0 +1,122 @@
+Merge sort:
+
+sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           234,149      branch-misses                    #    2.45% of all branches
+         9,572,445      branches
+         4,191,752      br_inst_retired.not_taken
+
+       0.005641963 seconds time elapsed
+
+       0.005626000 seconds user
+       0.000000000 seconds sys
+
+reverse sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           238,843      branch-misses                    #    2.40% of all branches
+         9,968,228      branches
+         4,297,984      br_inst_retired.not_taken
+
+       0.006592383 seconds time elapsed
+
+       0.006528000 seconds user
+       0.000000000 seconds sys
+
+random data:
+
+ Performance counter stats for './a.out 50000':
+
+           287,610      branch-misses                    #    2.99% of all branches
+         9,624,298      branches
+         4,615,545      br_inst_retired.not_taken
+
+       0.006540687 seconds time elapsed
+
+       0.006485000 seconds user
+       0.000000000 seconds sys
+
+Quick sort:
+
+sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           302,344      branch-misses                    #    1.71% of all branches
+        17,704,301      branches
+         7,867,081      br_inst_retired.not_taken
+
+       0.005456226 seconds time elapsed
+
+       0.005404000 seconds user
+       0.000000000 seconds sys
+
+reverse sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           313,177      branch-misses                    #    0.58% of all branches
+        53,935,798      branches
+         4,503,801      br_inst_retired.not_taken
+
+       0.024498470 seconds time elapsed
+
+       0.024435000 seconds user
+       0.000000000 seconds sys
+
+random data:
+
+ Performance counter stats for './a.out 50000':
+
+           266,681      branch-misses                    #    6.47% of all branches
+         4,123,189      branches
+         1,689,658      br_inst_retired.not_taken
+
+       0.004760213 seconds time elapsed
+
+       0.004709000 seconds user
+       0.000000000 seconds sys
+
+timsort:
+
+sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           228,633      branch-misses                    #    6.15% of all branches
+         3,717,437      branches
+         1,646,290      br_inst_retired.not_taken
+
+       0.003547420 seconds time elapsed
+
+       0.003499000 seconds user
+       0.000000000 seconds sys
+
+reverse sorted data:
+
+ Performance counter stats for './a.out 50000':
+
+           232,854      branch-misses                    #    5.73% of all branches
+         4,064,226      branches
+         1,713,767      br_inst_retired.not_taken
+
+       0.003684190 seconds time elapsed
+
+       0.000000000 seconds user
+       0.003660000 seconds sys
+       
+random data:
+
+ Performance counter stats for './a.out 50000':
+
+           213,150      branch-misses                    #    5.03% of all branches
+         4,240,850      branches
+         2,236,478      br_inst_retired.not_taken
+
+       0.003458985 seconds time elapsed
+
+       0.003420000 seconds user
+       0.000000000 seconds sys

@@ -1,0 +1,17 @@
+         merge_sort on sorted sorted   500000 values in   20.76 ms
+        merge_sort on reverse sorted   500000 values in   21.17 ms
+         merge_sort on random sorted   500000 values in   38.98 ms
+merge_sort on partialy sorted sorted   500000 values in   29.11 ms
+merge_sort on many duplicates sorted   500000 values in   28.77 ms
+
+         quick_sort on sorted sorted   500000 values in   64.22 ms
+        quick_sort on reverse sorted   500000 values in 3291.94 ms
+         quick_sort on random sorted   500000 values in   49.72 ms
+quick_sort on partialy sorted sorted   500000 values in   49.07 ms
+quick_sort on many duplicates sorted   500000 values in 2392.78 ms
+
+            timSort on sorted sorted   500000 values in    5.64 ms
+           timSort on reverse sorted   500000 values in    6.23 ms
+            timSort on random sorted   500000 values in   20.79 ms
+   timSort on partialy sorted sorted   500000 values in   12.72 ms
+   timSort on many duplicates sorted   500000 values in   12.12 ms
